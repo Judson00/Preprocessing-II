@@ -177,7 +177,7 @@ img {
 .header header {
   border-bottom: 3px dotted black;
   margin: 2% 0 0 0;
-  padding: 2% 0 4% 0;
+  padding-bottom: 1%;
   display: flex;
   justify-content: space-between;
   width: 100%;
