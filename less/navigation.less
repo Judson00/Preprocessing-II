@@ -6,6 +6,8 @@
   justify-content: center;
   width:100%;
 
+   
+
   header{
     border-bottom: 3px dotted black;
     margin:2% 0 0 0;
@@ -14,8 +16,18 @@
     justify-content: space-between;
     width: 100%;
 
+    @media @mobile{
+      flex-direction: column;
+      align-items: center;
+    }
+
     h1{
       padding-left: 3%;
+
+      @media @mobile{
+        flex-direction: column;
+        text-align: center;
+      }
     }
 
     nav{
@@ -24,10 +36,20 @@
       justify-content: space-evenly;
       width: 40%;
 
+      @media @mobile{
+        justify-content: space-evenly;
+        width: 80%;
+        margin-top: 3%;
+      }
+
       a{
         text-decoration: none;
         font-size: 2rem;
         color: black;
+
+        @media @mobile{
+          justify-content: center;
+        }
       }
 
     }//nav ends
@@ -42,6 +64,7 @@
   img{
   background-image: url('img/fun-bus.jpg');
   width: 80%;
+
   }//img ends
 }//.header-image ends
 
